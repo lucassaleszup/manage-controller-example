@@ -1,0 +1,5 @@
+name: nginx
+repoUrl: https://github.com/maycommit/argocd-example-apps
+path: nginx
+template:
+  type: puremanifest
