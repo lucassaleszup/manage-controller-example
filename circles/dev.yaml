@@ -1,0 +1,16 @@
+name: dev
+segments:
+- key: email
+  condition: "="
+  value: mail@mail.com
+environments:
+- key: API
+  value: http://service:8080
+release:
+  name: release-charles-v2
+  tag: latest
+  projects:
+  - name: nginx
+    image: latest
+destination:
+  namespace: default
