@@ -1,20 +1,19 @@
-kind: Circle
 apiVersion: circlerr.io/v1alpha1
+kind: Circle
 metadata:
   name: dev
 spec:
   segments:
-  - key: email
-    condition: "="
-    value: mail@mail.com
+    - key: email
+      condition: "="
+      value: mail@mail.com
   environments:
-  - key: API
-    value: http://service:8080
+    - key: API
+      value: http://service:8080
   release:
     name: release-charles-v2
-    tag: latest
     projects:
-    - name: nginx
-      image: latest
+      - name: nginx
+        image: latest
   destination:
     namespace: default
