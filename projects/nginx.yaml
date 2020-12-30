@@ -1,5 +1,9 @@
-name: nginx
-repoUrl: https://github.com/maycommit/argocd-example-apps
-path: nginx
-template:
-  type: puremanifest
+kind: Project
+apiVersion: circlerr.io/v1alpha1
+metadata:
+  name: nginx
+spec:
+  repoUrl: https://github.com/maycommit/argocd-example-apps
+  path: nginx
+  template:
+    type: puremanifest
