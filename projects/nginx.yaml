@@ -6,4 +6,4 @@ spec:
   repoUrl: https://github.com/maycommit/argocd-example-apps
   path: nginx
   template:
-    type: puremanifest
+    templateType: puremanifest
