@@ -1,5 +1,5 @@
-kind: Project
 apiVersion: circlerr.io/v1alpha1
+kind: Project
 metadata:
   name: nginx
 spec:
