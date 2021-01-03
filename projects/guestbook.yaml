@@ -1,0 +1,10 @@
+
+apiVersion: circlerr.io/v1alpha1
+kind: Project
+metadata:
+  name: guestbook
+spec:
+  repoUrl: https://github.com/maycommit/argocd-example-apps
+  path: guestbook
+  template:
+    templateType: puremanifest
