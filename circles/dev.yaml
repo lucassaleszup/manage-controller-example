@@ -15,7 +15,5 @@ spec:
     projects:
       - name: nginx
         image: latest
-      - name: guestbook
-        image: latest
   destination:
     namespace: default
