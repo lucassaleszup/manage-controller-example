@@ -1,0 +1,19 @@
+apiVersion: circlerr.io/v1alpha1
+kind: Circle
+metadata:
+  name: maycon
+spec:
+  segments:
+    - key: email
+      condition: "="
+      value: maycon@mail.com
+  environments:
+    - key: API
+      value: http://service:8080
+  release:
+    name: release-charles-v8
+    projects:
+      - name: guestbook
+        image: latest
+  destination:
+    namespace: default
