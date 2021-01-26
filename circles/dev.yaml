@@ -13,8 +13,6 @@ spec:
   release:
     name: release-charles-v2
     projects:
-      - name: nginx
-        image: latest
       - name: guestbook
         image: latest
   destination:
