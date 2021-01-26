@@ -4,7 +4,7 @@ kind: Project
 metadata:
   name: guestbook
 spec:
-  repoUrl: git@github.com:circlerr/circlerr-example-apps
+  repoUrl: https://github.com/circlerr/circlerr-example-apps
   path: guestbook
   template:
     templateType: puremanifest
