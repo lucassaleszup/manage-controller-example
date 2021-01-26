@@ -4,7 +4,7 @@ kind: Project
 metadata:
   name: guestbook
 spec:
-  repoUrl: https://github.com/maycommit/argocd-example-apps
+  repoUrl: git@github.com:circlerr/circlerr-example-apps
   path: guestbook
   template:
     templateType: puremanifest
