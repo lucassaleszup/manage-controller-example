@@ -1,0 +1,21 @@
+apiVersion: circlerr.io/v1alpha1
+kind: Circle
+metadata:
+  name: adauto
+spec:
+  segments:
+    - key: email
+      condition: "="
+      value: adauto@mail.com
+  environments:
+    - key: API
+      value: http://service:8080
+  release:
+    name: release-charles-v6
+    projects:
+      - name: nginx
+        image: latest
+      - name: guestbook
+        image: latest
+  destination:
+    namespace: default
