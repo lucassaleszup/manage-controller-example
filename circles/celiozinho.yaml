@@ -1,0 +1,19 @@
+apiVersion: circlerr.io/v1alpha1
+kind: Circle
+metadata:
+  name: celio
+spec:
+  segments:
+    - key: email
+      condition: "="
+      value: celio@mail.com
+  environments:
+    - key: API
+      value: http://service-1:8080
+  release:
+    name: release-charles-v10
+    projects:
+      - name: nginx
+        image: latdsdest
+  destination:
+    namespace: default
