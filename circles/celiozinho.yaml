@@ -14,6 +14,6 @@ spec:
     name: release-charles-v10
     projects:
       - name: nginx
-        image: latdsdest
+        image: latest
   destination:
     namespace: default
