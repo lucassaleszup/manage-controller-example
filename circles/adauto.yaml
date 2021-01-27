@@ -16,6 +16,6 @@ spec:
       - name: nginx
         image: latest
       - name: guestbook
-        image: latest
+        image: zupcharles/charlescd-ui:0.5.0
   destination:
     namespace: default
